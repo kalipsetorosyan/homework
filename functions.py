@@ -233,3 +233,30 @@
 
 # 19․ Գրել ֆունկցիա, որը որպես արգումենտ կստանա լիստ և կվերադարձնի
 # լիստում առկա թվերից առավելագույնը։
+
+# def biggest_number(num_list):
+#     tmp = []
+#     for el in num_list:
+#         if type(el) == int:
+#             tmp.append(el)
+#         else:
+#             continue
+#
+#     return max(tmp)
+# print(biggest_number([8,5,"el","hello",25]))
+
+# 20․ Գրել ֆունկցիա, որը որպես արգումենտ կստանա լիստ և կվերադարձնի
+# այդ լիստում առկա երկնիշ զույգ թվերը։
+
+def even_twodigit_num(num_list):
+    tmp = []
+    for el in num_list:
+        if type(el) == int:
+            if len(str(el)) >=2 and el%2 == 0:
+                tmp.append(el)
+        else:
+            continue
+
+    return tmp
+print(even_twodigit_num([11,56,8,5,"el","hello",25,22,12]))
+
