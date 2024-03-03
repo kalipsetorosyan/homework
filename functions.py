@@ -169,4 +169,52 @@
 #
 # print(count_func("this is my happy day"))
 
+# 13. Գրել ֆունկցիա, որը որպես արգումենտ կստանա տող և թիվ։
+# Կվերադարձնի այդ թվին համապատասխն ինդեքսում եղած էլէմենտները՝
+# սկզբից և վերջից։
 
+# def slice(text,slice = 0):
+#     return text[:slice:]
+#
+# print(slice("hello world",4))
+
+# 15․ Գրել ֆունկցիա, որը որպես արգումենտ կստանա թիվ և կստուգի
+# պոլինդրոմ է այն, թե ոչ։
+
+# def polindrom(*args):
+#     for el in args:
+#         if len(str(el)) >= 2 and str(el)[0] == str(el)[-1]:
+#             return el
+#         else:
+#             continue
+#
+#
+# print(polindrom(1, 101, 200, 202))
+
+# 16․ Գրել ֆունկցիա, որը որպես արգումենտ կստանա թիվ և կվերադարձնի
+# իրեն ամենամոտ պոլինդրոմ թիվը։
+
+# def need_polindrom(num):
+#     while True:
+#         if len(str(num)) >= 2 and str(num) == str(num)[::-1]:
+#                 return num
+#         else:
+#             num +=1
+#             continue
+#
+# print(need_polindrom(105))
+
+# 17․ Գրել ֆունկցիա, որը որպես արգումենտ կստանա թիվ և կվերադարձնի իր
+# առաջին և վերջին թվանշանների արտադրյալը։
+
+# def multiplication(number):
+#     if len(str(number)) >= 2:
+#         num1 = int(str(number)[0])
+#         num2 = int(str(number)[-1])
+#         return num1 * num2
+#
+#
+# print(multiplication(22))
+
+# 18. Գրել ֆունկցիա, որը որպես արգումենտ կստանա լիստ և կվերադարձնի
+# լիստում եղած տողերի քանակությունը։
